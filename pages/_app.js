@@ -6,7 +6,8 @@ import { useState } from 'react'
 function MyApp({ Component, pageProps }) {
 
   const [authenticated, setAuthenticated] = useState(false)
-  const state = {authenticated, setAuthenticated}
+  const [ checklist, setChecklist ] = useState([])
+  const state = {authenticated, setAuthenticated, checklist, setChecklist}
 
   return (
     <ChakraProvider>
